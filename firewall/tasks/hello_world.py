@@ -1,5 +1,6 @@
 from celery.utils.log import get_task_logger
-from app.queue import queue
+
+from firewall.app import queue
 
 logger = get_task_logger(__name__)
 
