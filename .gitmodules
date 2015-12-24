@@ -1,0 +1,3 @@
+[submodule "vendors/python-iptables"]
+	path = vendors/python-iptables
+	url = https://github.com/ldx/python-iptables.git
