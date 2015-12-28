@@ -1,15 +1,20 @@
-from distutils.core import setup
+#!/usr/bin/env python3
+from setuptools import setup, find_packages
 
 setup(
         name='Firewall',
-        version='v2',
-        packages=['app', 'tasks'],
+        version='2',
+        packages=find_packages(),
         url='',
         license='MIT',
         author='salas',
         author_email='',
         description='',
-        requires=['celery', 'python-iptables'],
+        install_requires=['celery', 'python-iptables', 'plumbum', 'click'],
+        entry_points='''
+            [console_scripts]
+            firewall-cli=firewall:cli
+        ''',
         classifiers=[
             # How mature is this project? Common values are
             #   3 - Alpha

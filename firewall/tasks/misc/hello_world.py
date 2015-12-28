@@ -6,6 +6,6 @@ logger = get_task_logger(__name__)
 
 
 @queue.task
-def test(x):
+def hello(x):
     logger.info("It is a ...")
     logger.info(x)
