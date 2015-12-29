@@ -10,7 +10,7 @@ setup(
         author='salas',
         author_email='',
         description='',
-        install_requires=['celery', 'python-iptables', 'plumbum', 'click'],
+        install_requires=['celery', 'python-iptables', 'plumbum', 'click', 'colorlog'],
         entry_points='''
             [console_scripts]
             firewall-cli=firewall:cli
