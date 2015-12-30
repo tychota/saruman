@@ -5,10 +5,10 @@ from celery.exceptions import Ignore
 from plumbum.cmd import lsmod, modprobe
 
 
-from firewall.app.queue import queue
+from saruman.app.queue import queue
 
-from firewall.helpers.exceptions.plumbum import ProcessExecutionError
-from firewall.helpers.exceptions.firewall import FirewallGenericError, FirewallNotAllowedError
+from saruman.helpers.exceptions.plumbum import ProcessExecutionError
+from saruman.helpers.exceptions.firewall import FirewallGenericError, FirewallNotAllowedError
 
 __all__ = ['check']
 

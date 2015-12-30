@@ -1,41 +1,34 @@
 #!/usr/bin/env python3
 from setuptools import setup, find_packages
 
+version = __import__('saruman').__version__
+
 setup(
-        name='Firewall',
-        version='2',
+        name='saruman',
+        version=version,
         packages=find_packages(),
         url='',
         license='MIT',
-        author='salas',
-        author_email='',
-        description='',
+        author='tychota',
+        author_email='tycho.tatitscheff+saruman@gadz.org',
+        description='A firewall that leverage workqueue ! Build by iresam for iresam !',
         install_requires=['celery', 'python-iptables', 'plumbum', 'click', 'colorlog'],
         entry_points='''
             [console_scripts]
-            firewall-cli=firewall:cli
+            saruman=saruman.__main__:cli
         ''',
         classifiers=[
-            # How mature is this project? Common values are
-            #   3 - Alpha
-            #   4 - Beta
-            #   5 - Production/Stable
-            'Development Status :: 3 - Alpha',
-
-            # Indicate who your project is intended for
-            'Intended Audience :: Developers',
-            'Topic :: Software Development :: Build Tools',
-
-            # Pick your license as you wish (should match "license" above)
+            'Development Status :: 2 - Pre-Alpha',
+            'Environment :: Console',
+            'Intended Audience :: System Administrators',
+            'Natural Language :: English',
+            'Natural Language :: French',
+            'Operating System :: POSIX :: Linux',
+            'Topic :: Internet :: Name Service (DNS)',
+            'Topic :: Internet :: Proxy Servers',
+            'Topic :: System :: Networking',
+            'Topic :: System :: Networking :: Firewalls',
             'License :: OSI Approved :: MIT License',
-
-            # Specify the Python versions you support here. In particular, ensure
-            # that you indicate whether you support Python 2, Python 3 or both.
-            'Programming Language :: Python :: 2',
-            'Programming Language :: Python :: 2.6',
-            'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.2',
             'Programming Language :: Python :: 3.3',
             'Programming Language :: Python :: 3.4',
         ],

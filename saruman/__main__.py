@@ -7,8 +7,8 @@ import time
 from colorlog import ColoredFormatter
 import celery.bin.multi
 
-from firewall.app.queue import queue
-from firewall.actions.start import start_all
+from saruman.app.queue import queue
+from saruman.actions.start import start_all
 
 import logging
 logger = logging.getLogger()
