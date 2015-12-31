@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 from setuptools import setup, find_packages
+from setuptools.command.install import install as _install
 
 version = __import__('saruman').__version__
+
+
+class Install(_install):
+    def run(self):
+        _install.run(self)
+        print("Post Install")
 
 setup(
         name='saruman',
         version=version,
         packages=find_packages(),
-        url='',
+        url='https://github.com/tychota/saruman',
+        download_url='https://github.com/tychota/saruman/tarball/0.1'
         license='MIT',
         author='tychota',
         author_email='tycho.tatitscheff+saruman@gadz.org',
@@ -17,6 +25,7 @@ setup(
             [console_scripts]
             saruman=saruman.__main__:cli
         ''',
+        cmdclass={'install': Install},
         classifiers=[
             'Development Status :: 2 - Pre-Alpha',
             'Environment :: Console',
