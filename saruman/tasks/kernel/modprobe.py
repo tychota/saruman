@@ -1,14 +1,11 @@
+from celery import Task
 from celery.utils.log import get_task_logger
-from celery import Task, states
-from celery.exceptions import Ignore
+
 # noinspection PyUnresolvedReferences
 from plumbum.cmd import lsmod, modprobe
 
-
-from saruman.app.queue import queue
-
-from saruman.helpers.exceptions.plumbum import ProcessExecutionError
-from saruman.helpers.exceptions.firewall import FirewallGenericError, FirewallNotAllowedError
+from saruman.helpers.error_handling import error_handling
+from saruman.helpers.exceptions import FirewallNotAllowedError
 
 __all__ = ['check']
 
@@ -18,42 +15,69 @@ allowed_mod = ['dummy']
 
 
 class Check(Task):
+    """
+    Tache de vérification de l'activation d'un module dans le kernel
+
+    Vérifie si le module `module_name` est activé dans le kernel.
+    Se réfère à une liste des modules autorisés (ainsi, l'utilisateur ne peut pas
+    supprimer le module du filesystem par exemple).
+    La tache tourne dans un context (:py:func:error_handling) qui gère les erreurs
+
+    """
     name = 'kernel.modules.check'
 
-    def run(self, module_name, **kwargs):
-        logger.info("Check pour voir si le module `{}` du kernel est activé".format(module_name))
-        try:
+    def run(self, module_name):
+        """
+        :param  str module_name: le nom du module à checker
+        :return: oui si le module est activé, non sinon
+        :rtype: bool
+        """
+        with error_handling(logger):
+            logger.info("Check pour voir si le module `{}` du kernel est activé".format(module_name))
             if module_name not in allowed_mod:
                 raise FirewallNotAllowedError("Le module `{}` du kernel n'est pas whitelisté".format(module_name))
             logger.debug("Execution de lsmod")
             mod = lsmod()
             return module_name in mod
-        except (ProcessExecutionError, FirewallGenericError) as e:
-            logger.error(e)
-        except Exception as e:
-            logger.exception(e)
 
 
 class Add(Task):
+    """
+    Tache de vérification de l'activation d'un module dans le kernel
+
+    Vérifie si le module `module_name` est activé dans le kernel.
+    Se réfère à une liste des modules autorisés (ainsi, l'utilisateur ne peut pas
+    supprimer le module du filesystem par exemple).
+    La tache tourne dans un context (:py:func:error_handling) qui gère les erreurs
+    """
     name = 'kernel.modules.add'
 
     def run(self, module_name, module_args, **kwargs):
-        logger.info("Activation du module `{}` du kernel".format(module_name))
-        try:
+        """
+        :param str module_name: le nom du module à checker
+        :param dict module_args: un dictionnaire d'arguments
+        """
+        with error_handling(logger):
+            logger.info("Activation du module `{}` du kernel".format(module_name))
             if module_name not in allowed_mod:
                 raise FirewallNotAllowedError("Le module `{}` du kernel n'est pas whitelisté".format(module_name))
             logger.debug("Execution de modprobe")
             if module_args is not None:
-                mod = modprobe[module_name, module_args]()
+                arguments = ['{}={}'.format(k, v) for k, v in module_args.items()]
+                result = modprobe[module_name, *arguments]()
             else:
-                mod = modprobe[module_name]()
-            actif = mod
-            logger.info("Le module `{}` du kernel est {}".format(module_name, "activé" if actif else "désactivé"))
-            return actif
-        except (ProcessExecutionError, FirewallGenericError) as e:
-            logger.error(e)
-        except Exception as e:
-            logger.exception(e)
+                result = modprobe[module_name]()
+            logger.info("Le module `{}` du kernel est {}".format(module_name, "activé" if result else "désactivé"))
 
-if __name__ == '__main__':
-    Check().delay("test")
+
+class Remove(Task):
+    name = 'kernel.modules.remove'
+
+    def run(self, module_name,  **kwargs):
+        with error_handling(logger):
+            logger.info("Desactivation du module `{}` du kernel".format(module_name))
+            if module_name not in allowed_mod:
+                raise FirewallNotAllowedError("Le module `{}` du kernel n'est pas whitelisté".format(module_name))
+            logger.debug("Execution de modprobe")
+            result = modprobe["-r", module_name]()
+            logger.info("Le module `{}` du kernel est {}".format(module_name, "activé" if result else "désactivé"))

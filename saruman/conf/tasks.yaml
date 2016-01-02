@@ -1,0 +1,4 @@
+- subtasks:
+    description: Chargement des modules du kernel
+    path: conf.tasks.kernel
+    include: *

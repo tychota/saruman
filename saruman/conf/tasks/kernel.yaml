@@ -1,0 +1,17 @@
+- task:
+    name: kernel.modprobe.dummy
+    actions:
+      - kernel.modprobe.remove
+      - kernel.modprobe.add
+      - kernel.modprobe.check
+    args:
+      - dummy
+    kwargs:
+      - numdummies: 2
+- task:
+    name: kernel.modprobe.bridge
+    actions:
+      - kernel.modprobe.add
+      - kernel.modprobe.check
+    args:
+      - bridge
