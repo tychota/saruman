@@ -28,5 +28,6 @@ bugs and fixing the code:
 
    project
    developing
+   modules
    entrypoints
    changelog
