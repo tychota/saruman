@@ -164,7 +164,7 @@ build:
     tests:
         override:
             -
-                command: sudo ./setup.py test
+                command: ./setup.py test
                 coverage:
                     file: .coverage
                     format: py-cc

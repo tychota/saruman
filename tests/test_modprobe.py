@@ -10,10 +10,10 @@ class KernelModprobeTest(unittest.TestCase):
     def setUp(self):
         current_app.conf.CELERY_ALWAYS_EAGER = True
 
-    def test(self):
-        saruman.tasks.kernel.modprobe.Add().apply(args=('dummy',)).get()
+    def test_check(self):
         rst = saruman.tasks.kernel.modprobe.Check().apply(args=('dummy',)).get()
-        eq_(rst, True)
-        saruman.tasks.kernel.modprobe.Remove().apply(args=('dummy',)).get()
-        rst = saruman.tasks.kernel.modprobe.Check().apply(args=('dummy',)).get()
-        eq_(rst, False)
+        assert isinstance(rst, bool) and rst is not None, "%r doesnt return a boolean or return None" % rst
+
+    def test_add(self):
+        rst = saruman.tasks.kernel.modprobe.Add().apply(args=('dummy',)).get()
+        assert rst is  None, "%r doesnt return None" % rst
