@@ -4,8 +4,12 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import sys
+import os
 import datetime
 import pkg_resources
+
+sys.path.append(os.path.pardir(os.path.dirname(__name__)))
 
 project = "Saruman"
 author = "Tycho Tatitscheff"
@@ -191,7 +195,6 @@ latex_documents = [
 
 # If false, no module index is generated.
 # latex_domain_indices = True
-
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
