@@ -157,7 +157,7 @@ filter:
 
 build:
     environment:
-        python: 3.5
+        python: 3.5.O
     tests:
         override:
             -
