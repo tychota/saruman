@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import contextlib
 import logging
 
@@ -14,7 +16,7 @@ from saruman.helpers.exceptions import FirewallGenericError
 
 __all__ = ['error_handling']
 
-WARNING = (Ignore, AlreadyRegistered, TimeoutError, CPendingDeprecationWarning,
+WARNING = (Ignore, AlreadyRegistered, CPendingDeprecationWarning,
            CDeprecationWarning, FixupWarning, DuplicateNodenameWarning,
            SoftTimeLimitExceeded, Retry)
 HANDLED_ERROR = ()

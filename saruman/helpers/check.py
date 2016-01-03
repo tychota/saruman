@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 def get_celery_worker_status():
     error_key = "ERROR"
     try:

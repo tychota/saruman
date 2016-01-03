@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import saruman.tasks.firewall
 
 import saruman.tasks.misc

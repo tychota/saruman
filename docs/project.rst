@@ -20,4 +20,4 @@ options:
   Or if you want to tell us about an idea you have.
 
 
-.. include:: ../../CREDITS.rst
+.. include:: ../CREDITS.rst
