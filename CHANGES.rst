@@ -1,7 +1,7 @@
 Changelog for Saruman
 =====================
 
-0.2.3 (unreleased)
+0.2.3 (2016-01-03)
 ------------------
 
 - fixing badges and covergae in testing

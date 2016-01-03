@@ -23,7 +23,7 @@ class Install(_install):
 
 setup(
         name='saruman',
-        version='0.2.3.dev0',
+        version='0.2.3',
         packages=find_packages(),
         url='https://github.com/tychota/saruman',
         license='MIT',
