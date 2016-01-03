@@ -16,8 +16,6 @@ class Bridge(Task):
     name = 'kernel.modules.check'
 
     @error_handling(logger)
-    def run(self, module_name, **kwargs):
-        logger.info("Check pour voir si le module `{}` du kernel est activé".format(module_name))
-        logger.debug("Execution de lsmod")
-        mod = lsmod()
-        return module_name in mod
+    def run(self, bridge_name, interface_name):
+        logger.info("Création d'un nouveau bridge `{}`".format(bridge_name))
+        logger.debug("Execution de ip")

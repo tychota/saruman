@@ -1,6 +1,23 @@
 Saruman
 =======
 
+.. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/quality-score.png?b=master
+    :alt: Code Quality Status
+
+.. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/coverage.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/coverage.png?b=master
+    :alt: Build Coverage
+
+.. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/build.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/build.png?b=master
+    :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/saruman/badge/?version=latest
+    :target: http://saruman.readthedocs.org/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
 Saruman: a logic, configuration based, distribuable firewall.
 
 Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy)
@@ -21,7 +38,7 @@ Most important Urls
 - The code is at `github.com/tychota/saruman
   <https://github.com/tychota/saruman>`_.
 
-And... we're automatically being tested by Travis and Landscape:
+And... we're automatically being tested by Scrutinizer !
 
 Technologies used
 -----------------

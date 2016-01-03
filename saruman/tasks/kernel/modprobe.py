@@ -64,7 +64,8 @@ class Add(Task):
             logger.debug("Execution de modprobe")
             if module_args is not None:
                 arguments = ['{}={}'.format(k, v) for k, v in module_args.items()]
-                result = modprobe[module_name, *arguments]()
+                arguments = [module_name].extend(arguments)
+                result = modprobe(arguments)
             else:
                 result = modprobe[module_name]()
             logger.info("Le module `{}` du kernel est {}".format(module_name, "activé" if result else "désactivé"))

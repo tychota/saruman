@@ -5,10 +5,10 @@ from setuptools.command.install import install as _install
 
 def read(filename):
     try:
-        with open(filename, encoding='utf-8') as f:
+        with open(filename) as f:
             return f.read()
     except NameError:
-        with open(filename, 'r', encoding='utf-8') as f:
+        with open(filename, 'r') as f:
             return f.read()
 
 long_description = u'\n\n'.join([read('README.rst'),
@@ -23,7 +23,7 @@ class Install(_install):
 
 setup(
         name='saruman',
-        version='0.1.3.dev0',
+        version='0.2.0.dev0',
         packages=find_packages(),
         url='https://github.com/tychota/saruman',
         license='MIT',
@@ -36,7 +36,7 @@ setup(
             'plumbum',
             'click',
             'colorlog',
-            'yaml'
+            'pyyaml'
         ],
         setup_requires=['pytest-runner'],
         tests_require=['pytest'],
