@@ -1,17 +1,29 @@
-- task:
+# Un nouveau plan
+- plan:
+    # Le nom du plan
     name: kernel.modprobe.dummy
-    actions:
-      - kernel.modprobe.remove
-      - kernel.modprobe.add
-      - kernel.modprobe.check
+    # Une description
+    description: Ajout du module dummy si il n'existe pas
+    # Les différentes taches à executer
+    # (ici 1: 2: indique une sequentialité :
+    # attendre la fin de la tache pour lancer la suivante)
+    steps:
+      1: kernel.modprobe.remove
+      2: kernel.modprobe.add
+    # La tache de fin, qui se doit de retourner un booléan "true" si tout est oki
+    assert:
+      1: kernel.modprobe.check
+
     args:
       - dummy
     kwargs:
       - numdummies: 2
-- task:
+
+- plan:
     name: kernel.modprobe.bridge
-    actions:
+    step:
       - kernel.modprobe.add
+    assert:
       - kernel.modprobe.check
     args:
       - bridge
