@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Saruman by tychota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Saruman</h1>
+      <h2 class="project-tagline">Saruman: a logic, configuration based, distribuable firewall.</h2>
+      <a href="https://github.com/tychota/saruman" class="btn">View on GitHub</a>
+      <a href="https://github.com/tychota/saruman/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/tychota/saruman/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="saruman" class="anchor" href="#saruman" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saruman</h1>
+
+<p><img src="https://scrutinizer-ci.com/g/tychota/saruman/badges/quality-score.png?b=master" alt="https://scrutinizer-ci.com/g/tychota/saruman"></p>
+
+<p><img src="https://scrutinizer-ci.com/g/tychota/saruman/badges/coverage.png?b=master" alt="https://scrutinizer-ci.com/g/tychota/saruman"></p>
+
+<p><img src="https://scrutinizer-ci.com/g/tychota/saruman/badges/build.png?b=master" alt="https://scrutinizer-ci.com/g/tychota/saruman/build-status/master"></p>
+
+<p><img src="https://readthedocs.org/projects/saruman/badge/?version=latest" alt="http://saruman.readthedocs.org/en/latest/?badge=latest"></p>
+
+<p><img src="https://requires.io/github/tychota/saruman/requirements/?branch=master" alt="https://requires.io/github/tychota/saruman/requirements.svg?branch=master"></p>
+
+<p><img src="https://pypi.python.org/pypi/saruman" alt="https://img.shields.io/pypi/v/saruman.svg"></p>
+
+<p>Saruman: a logic, configuration based, distribuable firewall.</p>
+
+<p>Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy)
+build by a former <code>Iresam &lt;https://www.iresam.org&gt;</code>_ members.</p>
+
+<p>It targets I-Resam need's first but should be enough flexible to be used elsewhere.</p>
+
+<p>It still unstable and yet brings not that much.
+Try at your own risks.</p>
+
+<h2>
+<a id="most-important-urls" class="anchor" href="#most-important-urls" aria-hidden="true"><span class="octicon octicon-link"></span></a>Most important Urls</h2>
+
+<ul>
+<li><p>The full documentation is at <code>saruman.readthedocs.org &lt;https://readthedocs.org/projects/saruman/&gt;</code>_</p></li>
+<li><p>We are <code>on Pypi &lt;https://pypi.python.org/pypi/saruman&gt;</code>_ so we're only
+an <code>pip install saruman</code> away from installation on your computer.</p></li>
+<li><p>The code is at <code>github.com/tychota/saruman
+&lt;https://github.com/tychota/saruman&gt;</code>_.</p></li>
+</ul>
+
+<p>And... we're automatically being tested by Scrutinizer !</p>
+
+<h2>
+<a id="technologies-used" class="anchor" href="#technologies-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technologies used</h2>
+
+<ul>
+<li><p>Saruman <strong>does require</strong> Python 3, and if possible the newest version (<strong>Python3.5</strong> for now)</p></li>
+<li><p>It <strong>does require</strong> an Celery broker : take <strong>RabbitMQ</strong>, it is good, fast and reliable.</p></li>
+<li><p>It <strong>does only works</strong> on a recent linux machine : it requires <strong>nftables</strong> and <strong>iproute2</strong> so a linux 4+ kernel
+would be a necessity.</p></li>
+</ul>
+
+<h2>
+<a id="available-commands" class="anchor" href="#available-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available commands</h2>
+
+<p>Saruman gives you three commands to manage the worker and one to run your firewall.
+Worker's commands must be run in root since they manage main parts of your system.
+Firewall's one doesn't need this.
+The commands are:</p>
+
+<ul>
+<li><p><strong>saruman workers enable</strong>: start the celery workers on the machine.</p></li>
+<li><p><strong>saruman workers disable</strong>: start the celery workers on the machine.</p></li>
+<li><p><strong>saruman workers reload</strong>: restart the celery workers on the machine.</p></li>
+<li><p><strong>saruman firewall start</strong>: start the firewall</p></li>
+</ul>
+
+<h2>
+<a id="amqp-json-rpc-api" class="anchor" href="#amqp-json-rpc-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>AMQP json-rpc api</h2>
+
+<p>Still infant !</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/tychota/saruman">Saruman</a> is maintained by <a href="https://github.com/tychota">tychota</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
