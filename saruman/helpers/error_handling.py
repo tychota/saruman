@@ -4,7 +4,7 @@ import logging
 from plumbum.commands.processes import ProcessExecutionError, CommandNotFound, ProcessTimedOut
 from celery.exceptions import (SecurityError, Ignore, QueueNotFound, WorkerShutdown, WorkerTerminate,
                                ImproperlyConfigured, NotRegistered, AlreadyRegistered,
-                               TimeoutError, MaxRetriesExceededError, Retry,
+                               MaxRetriesExceededError, Retry,
                                TaskRevokedError, NotConfigured, AlwaysEagerIgnored,
                                InvalidTaskError, ChordError, CPendingDeprecationWarning,
                                CDeprecationWarning, FixupWarning, DuplicateNodenameWarning,
@@ -12,11 +12,11 @@ from celery.exceptions import (SecurityError, Ignore, QueueNotFound, WorkerShutd
                                Terminated)
 from saruman.helpers.exceptions import FirewallGenericError
 
-__all__ = ['celery_error_handling']
+__all__ = ['error_handling']
 
 WARNING = (Ignore, AlreadyRegistered, TimeoutError, CPendingDeprecationWarning,
            CDeprecationWarning, FixupWarning, DuplicateNodenameWarning,
-           SoftTimeLimitExceeded, )
+           SoftTimeLimitExceeded, Retry)
 HANDLED_ERROR = ()
 UNHANDLED_ERROR = (ProcessTimedOut, WorkerShutdown, WorkerTerminate, ImproperlyConfigured, NotRegistered,
                    MaxRetriesExceededError, TaskRevokedError, NotConfigured, AlwaysEagerIgnored, InvalidTaskError,
