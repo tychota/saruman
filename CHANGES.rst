@@ -7,6 +7,7 @@ Changelog for Saruman
 - fixing a lot of nasty issues
 
 
+
 0.2.0 (2016-01-03)
 ------------------
 
