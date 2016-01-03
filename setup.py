@@ -2,6 +2,8 @@
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
+import saruman
+
 
 def read(filename):
     try:
@@ -21,9 +23,10 @@ class Install(_install):
         _install.run(self)
         print("Post Install")
 
+
 setup(
         name='saruman',
-        version='0.3.0.dev0',
+        version=saruman.__version__,
         packages=find_packages(),
         url='https://github.com/tychota/saruman',
         license='MIT',
@@ -32,19 +35,13 @@ setup(
         description='A firewall that leverage AMQP workqueue ! Build by iresam for iresam !',
         long_description=long_description,
         install_requires=[
-            'celery',
-            'plumbum',
-            'click',
-            'colorlog',
-            'pyyaml',
-            'nose>=1.0',
-            'zest.releaser',
-            'coverage',
-        ],
-        setup_requires=[
-            'nose>=1.0',
-            'zest.releaser',
-            'coverage',
+            'celery==3.1.19',
+            'plumbum==1.6.1',
+            'click==6.2',
+            'colorlog==2.6.0',
+            'zest.releaser==6.4',
+            'coverage==4.0.3',
+            'pyyaml==3.11',
         ],
         test_suite="tests",
         entry_points='''

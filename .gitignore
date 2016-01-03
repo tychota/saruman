@@ -1,3 +1,5 @@
+/bin
+/docs/build
 
 
 .idea
@@ -39,4 +41,4 @@ coverage.xml
 *,cover
 cover/
 .hypothesis/
-doc/_build/
+docs/_build/

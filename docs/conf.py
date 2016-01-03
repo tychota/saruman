@@ -5,15 +5,14 @@
 # serve to show the default.
 
 import sys
-import os
+import os.path
 import datetime
-import pkg_resources
 
-sys.path.insert(0, os.path.abspath("../.."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 project = "Saruman"
 author = "Tycho Tatitscheff"
-version = pkg_resources.get_distribution("saruman").version
+version = "0.3.0"
 release = version
 this_year = datetime.date.today().year
 copyright = '%s, %s' % (this_year, author)
