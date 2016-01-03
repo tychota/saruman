@@ -1,3 +1,5 @@
+
+
 .idea
 
 *.log
@@ -35,5 +37,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+cover/
 .hypothesis/
 doc/_build/
