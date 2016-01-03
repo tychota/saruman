@@ -2,8 +2,6 @@
 from setuptools import setup, find_packages
 from setuptools.command.install import install as _install
 
-import saruman
-
 
 def read(filename):
     try:
@@ -23,10 +21,11 @@ class Install(_install):
         _install.run(self)
         print("Post Install")
 
+version = '0.3.1.dev0'
 
 setup(
         name='saruman',
-        version=saruman.__version__,
+        version=version,
         packages=find_packages(),
         url='https://github.com/tychota/saruman',
         license='MIT',
