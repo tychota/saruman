@@ -29,7 +29,8 @@ copyright = '%s, %s' % (this_year, author)
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.viewcode',
+              'sphinxjp.themes.basicstrap']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -195,9 +196,9 @@ latex_documents = [
 # If false, no module index is generated.
 # latex_domain_indices = True
 
-sys.path.append(os.path.abspath('_themes'))
-html_theme_path = ['_themes']
-html_theme = 'kr'
+# sys.path.append(os.path.abspath('_themes'))
+# html_theme_path = ['_themes']
+html_theme = 'basicstrap'
 pygments_style = 'flask_theme_support.FlaskyStyle'
 
 # Example configuration for intersphinx: refer to the Python standard library.
