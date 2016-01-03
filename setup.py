@@ -40,7 +40,9 @@ setup(
         ],
         setup_requires=[
             'nose>=1.0',
-            'zest.releaser'],
+            'zest.releaser',
+            'coverage',
+        ],
         test_suite="tests",
         entry_points='''
             [console_scripts]
