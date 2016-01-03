@@ -1,3 +1,6 @@
 include *.txt
 include *.rst
+include *.yml
+recursive-include doc *.py
+recursive-include doc *.rst
 recursive-include saruman *.yaml

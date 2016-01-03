@@ -4,7 +4,9 @@ Changelog for Saruman
 0.2.0 (unreleased)
 ------------------
 
-- redacting the readme text
+- adding sphinx documentation
+- adding CI coverage
+- fixing nasty unpack in modprobe.py
 
 
 0.1.2 (2016-01-03)
