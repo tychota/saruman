@@ -17,6 +17,10 @@ Saruman
     :target: http://saruman.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
 
+.. image::	https://img.shields.io/pypi/v/saruman.svg
+    :target: https://img.shields.io/pypi/v/saruman.svg
+    :alt: Pypi version
+
 
 Saruman: a logic, configuration based, distribuable firewall.
 
