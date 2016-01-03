@@ -22,7 +22,7 @@ Saruman
     :alt: Pypi version
 
 
-Saruman: a logic, configuration based, distribuable firewall.
+**A simply  logic, configuration based, distributable and reliable extended-firewall.**
 
 Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy)
 build by a former `Iresam <https://www.iresam.org>`_.
