@@ -1,6 +1,12 @@
 Changelog for Saruman
 =====================
 
+0.3.0 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 0.2.3 (2016-01-03)
 ------------------
 
