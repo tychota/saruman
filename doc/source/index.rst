@@ -24,7 +24,7 @@ And documentation on *saruman* as a project; for instance for reporting
 bugs and fixing the code:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    project
    developing

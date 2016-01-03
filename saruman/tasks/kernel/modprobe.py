@@ -1,3 +1,9 @@
+"""
+tasks.kernel.modprobe
+=====================
+
+Contains all the functionalities that help loading or unloading a kernel module
+"""
 from celery import Task
 from celery.utils.log import get_task_logger
 
