@@ -19,61 +19,49 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="saruman" class="anchor" href="#saruman" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saruman</h1>
+      <p>Saruman: a logic, configuration based, distribuable firewall.</p>
 
-<p><img src="https://readthedocs.org/projects/saruman/badge/?version=latest" alt="http://saruman.readthedocs.org/en/latest/?badge=latest"></p>
+<p>Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy) build by a former [I-Resam] members.</p>
 
-<p>Saruman: a logic, configuration based, distribuable firewall.</p>
+<p>It targets I-Resam need’s first but should be enough flexible to be used elsewhere.</p>
 
-<p>Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy)
-build by a former <code>Iresam &lt;https://www.iresam.org&gt;</code>_ members.</p>
+<p>It still unstable and yet brings not that much. Try at your own risks.</p>
 
-<p>It targets I-Resam need's first but should be enough flexible to be used elsewhere.</p>
-
-<p>It still unstable and yet brings not that much.
-Try at your own risks.</p>
-
-<h2>
-<a id="most-important-urls" class="anchor" href="#most-important-urls" aria-hidden="true"><span class="octicon octicon-link"></span></a>Most important Urls</h2>
+<h1>
+<a id="most-important-urls" class="anchor" href="#most-important-urls" aria-hidden="true"><span class="octicon octicon-link"></span></a>Most important Urls</h1>
 
 <ul>
-<li><p>The full documentation is at <code>saruman.readthedocs.org &lt;https://readthedocs.org/projects/saruman/&gt;</code>_</p></li>
-<li><p>We are <code>on Pypi &lt;https://pypi.python.org/pypi/saruman&gt;</code>_ so we're only
-an <code>pip install saruman</code> away from installation on your computer.</p></li>
-<li><p>The code is at <code>github.com/tychota/saruman
-&lt;https://github.com/tychota/saruman&gt;</code>_.</p></li>
+<li>  The full documentation is at <a href="https://readthedocs.org/projects/saruman/">saruman.readthedocs.org</a>
+</li>
+<li>  We are <a href="https://pypi.python.org/pypi/saruman">on Pypi</a> so we’re only an <code>pip install saruman</code> away from installation on your computer.</li>
+<li>  The code is at [github.com/tychota/saruman].</li>
 </ul>
 
-<p>And... we're automatically being tested by Scrutinizer !</p>
+<p>And… we’re automatically being tested by Scrutinizer !</p>
 
-<h2>
-<a id="technologies-used" class="anchor" href="#technologies-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technologies used</h2>
+<h1>
+<a id="technologies-used" class="anchor" href="#technologies-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technologies used</h1>
 
 <ul>
-<li><p>Saruman <strong>does require</strong> Python 3, and if possible the newest version (<strong>Python3.5</strong> for now)</p></li>
-<li><p>It <strong>does require</strong> an Celery broker : take <strong>RabbitMQ</strong>, it is good, fast and reliable.</p></li>
-<li><p>It <strong>does only works</strong> on a recent linux machine : it requires <strong>nftables</strong> and <strong>iproute2</strong> so a linux 4+ kernel
-would be a necessity.</p></li>
+<li>  Saruman <strong>does require</strong> Python 3, and if possible the newest version (<strong>Python3.5</strong> for now)</li>
+<li>  It <strong>does require</strong> an Celery broker : take <strong>RabbitMQ</strong>, it is good, fast and reliable.</li>
+<li>  It <strong>does only works</strong> on a recent linux machine : it requires <strong>nftables</strong> and <strong>iproute2</strong> so a linux 4+ kernel would be a necessity.</li>
 </ul>
 
-<h2>
-<a id="available-commands" class="anchor" href="#available-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available commands</h2>
+<h1>
+<a id="available-commands" class="anchor" href="#available-commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available commands</h1>
 
-<p>Saruman gives you three commands to manage the worker and one to run your firewall.
-Worker's commands must be run in root since they manage main parts of your system.
-Firewall's one doesn't need this.
-The commands are:</p>
+<p>Saruman gives you three commands to manage the worker and one to run your firewall. Worker’s commands must be run in root since they manage main parts of your system. Firewall’s one doesn’t need this. The commands are:</p>
 
 <ul>
-<li><p><strong>saruman workers enable</strong>: start the celery workers on the machine.</p></li>
-<li><p><strong>saruman workers disable</strong>: start the celery workers on the machine.</p></li>
-<li><p><strong>saruman workers reload</strong>: restart the celery workers on the machine.</p></li>
-<li><p><strong>saruman firewall start</strong>: start the firewall</p></li>
+<li>  <strong>saruman workers enable</strong>: start the celery workers on the machine.</li>
+<li>  <strong>saruman workers disable</strong>: start the celery workers on the machine.</li>
+<li>  <strong>saruman workers reload</strong>: restart the celery workers on the machine.</li>
+<li>  <strong>saruman firewall start</strong>: start the firewall</li>
 </ul>
 
-<h2>
-<a id="amqp-json-rpc-api" class="anchor" href="#amqp-json-rpc-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>AMQP json-rpc api</h2>
+<h1>
+<a id="amqp-json-rpc-api" class="anchor" href="#amqp-json-rpc-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>AMQP json-rpc api</h1>
 
 <p>Still infant !</p>
 
