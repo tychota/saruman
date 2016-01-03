@@ -42,7 +42,7 @@ setup(
             'coverage==4.0.3',
             'pyyaml==3.11',
             'pygments',
-            'sphinxjp.themes.basicstrap'
+            'sphinx_bootstrap_theme'
         ],
         test_suite="tests",
         entry_points='''

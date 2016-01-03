@@ -8,6 +8,8 @@ import sys
 import os.path
 import datetime
 
+import sphinx_bootstrap_theme
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 project = "Saruman"
@@ -198,7 +200,8 @@ latex_documents = [
 
 # sys.path.append(os.path.abspath('_themes'))
 # html_theme_path = ['_themes']
-html_theme = 'basicstrap'
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
