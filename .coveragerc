@@ -1,0 +1,11 @@
+[report]
+omit =
+    */site-packages/nose/*
+    *__init__*
+    *test/*
+    */doc/*
+    */.tox/*
+    */setup.py
+
+[run]
+parallel=True

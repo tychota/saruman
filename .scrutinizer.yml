@@ -161,7 +161,7 @@ build:
     tests:
         override:
             -
-                command: ./run-tests.sh
+                command: ./setup.py test
                 coverage:
                     file: .coverage
                     config: .coveragerc
