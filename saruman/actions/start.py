@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import logging
 
 from saruman.app.queue import queue
