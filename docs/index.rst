@@ -1,9 +1,16 @@
-Saruman: a logic, configuration based, distribuable firewall
-############################################################
+Saruman
+#######
 
-Saruman: a logic, configuration based, distribuable firewall.
+**A simply  logic, configuration based, distributable and reliable extended-firewall.**
 
-Saruman is a extended firewall (meaning firewall + dns + dhcp +intruision detection + reverse proxy)
+Saruman is a extended firewall, meaning:
+
+- firewall
+- dns
+- dhcp
+- intruision detection
+- reverse proxy)
+
 build by a former `Iresam <https://www.iresam.org>`_.
 It targets I-Resam need's first but should be enough flexible to be used elsewhere.
 
