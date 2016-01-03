@@ -4,7 +4,7 @@ Changelog for Saruman
 0.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fixing a lot of nasty issues
 
 
 0.2.0 (2016-01-03)

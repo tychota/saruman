@@ -36,10 +36,11 @@ setup(
             'plumbum',
             'click',
             'colorlog',
-            'pyyaml'
+            'pyyaml',
         ],
-        setup_requires=['pytest-runner'],
-        tests_require=['pytest'],
+        setup_requires=[
+            'nose>=1.0',
+            'zest.releaser'],
         test_suite="tests",
         entry_points='''
             [console_scripts]

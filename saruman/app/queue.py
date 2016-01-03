@@ -1,15 +1,15 @@
 import celery
 
-queue = celery.Celery("firewall",
+queue = celery.Celery("saruman",
                       backend='amqp://guest@localhost//',
                       broker='amqp://guest@localhost//',
                       include=[
-                          "firewall.tasks",
-                          "firewall.tasks.kernel",
-                          "firewall.tasks.firewall",
+                          "saruman.tasks",
+                          "saruman.tasks.kernel",
+                          "saruman.tasks.firewall",
                       ])
 
-queue.config_from_object("firewall.conf.celery")
+queue.config_from_object("saruman.conf.celery")
 
 if __name__ == '__main__':
     pass

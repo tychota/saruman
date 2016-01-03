@@ -2,20 +2,24 @@ Saruman
 =======
 
 .. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/quality-score.png?b=master
-    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/
     :alt: Code Quality Status
 
 .. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/coverage.png?b=master
-    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/coverage.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/
     :alt: Build Coverage
 
 .. image:: https://scrutinizer-ci.com/g/tychota/saruman/badges/build.png?b=master
-    :target: https://scrutinizer-ci.com/g/tychota/saruman/badges/build.png?b=master
+    :target: https://scrutinizer-ci.com/g/tychota/saruman/
     :alt: Build Status
 
 .. image:: https://readthedocs.org/projects/saruman/badge/?version=latest
     :target: http://saruman.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
+
+.. image:: https://requires.io/github/tychota/saruman/requirements.svg?branch=master
+     :target: https://requires.io/github/tychota/saruman/requirements/?branch=master
+     :alt: Requirements Status
 
 .. image::	https://img.shields.io/pypi/v/saruman.svg
     :target: https://img.shields.io/pypi/v/saruman.svg
