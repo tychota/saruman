@@ -1,6 +1,7 @@
 include *.txt
 include *.rst
 include *.yml
+include .coveragerc
 recursive-include doc *.py
 recursive-include doc *.rst
 recursive-include saruman *.yaml
