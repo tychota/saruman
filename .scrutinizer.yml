@@ -156,7 +156,10 @@ filter:
         - '*/test/*'
 
 before_commands:
-    - pip3 install -r requirements.txt # Python2
+    - pip3 install -r requirements.txt
+    - pip3 install nose
+    - pip3 install coverage
+    - pip3 install zest.releaser
 
 build:
     environment:
