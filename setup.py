@@ -26,7 +26,6 @@ setup(
         version='0.1.1.dev0',
         packages=find_packages(),
         url='https://github.com/tychota/saruman',
-        download_url='https://github.com/tychota/saruman/tarball/0.1.0',
         license='MIT',
         author='tychota',
         author_email='tycho.tatitscheff+saruman@gadz.org',

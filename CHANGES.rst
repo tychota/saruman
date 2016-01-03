@@ -4,7 +4,7 @@ Changelog for Saruman
 0.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- remove download urls as we use sdist
 
 
 0.1.0 (2016-01-03)
