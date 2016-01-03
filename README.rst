@@ -18,7 +18,7 @@ Saruman
      :alt: Requirements Status
 
 .. image::	https://img.shields.io/pypi/v/saruman.svg?style=flat-square
-    :target: https://img.shields.io/pypi/v/saruman.svg
+    :target: https://pypi.python.org/pypi/saruman
     :alt: Pypi version
 
 
