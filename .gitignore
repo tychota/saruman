@@ -36,4 +36,4 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
-docs/_build/
+doc/_build/

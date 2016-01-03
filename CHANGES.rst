@@ -1,16 +1,16 @@
 Changelog for Saruman
 =====================
 
-0.1.3 (unreleased)
+0.2.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- redacting the readme text
 
 
 0.1.2 (2016-01-03)
 ------------------
 
-- Nothing changed yet.
+- fixing some typo.
 
 
 0.1.1 (2016-01-03)
@@ -24,4 +24,3 @@ Changelog for Saruman
 
 - add zest.release to perform check on release an better automation
 - add some yaml config files
-
