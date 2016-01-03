@@ -41,6 +41,7 @@ setup(
             'zest.releaser==6.4',
             'coverage==4.0.3',
             'pyyaml==3.11',
+            'pygments'
         ],
         test_suite="tests",
         entry_points='''

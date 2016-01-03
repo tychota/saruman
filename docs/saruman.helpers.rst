@@ -12,6 +12,14 @@ saruman.helpers.check module
     :undoc-members:
     :show-inheritance:
 
+saruman.helpers.config module
+-----------------------------
+
+.. automodule:: saruman.helpers.config
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 saruman.helpers.error_handling module
 -------------------------------------
 
@@ -24,6 +32,14 @@ saruman.helpers.exceptions module
 ---------------------------------
 
 .. automodule:: saruman.helpers.exceptions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+saruman.helpers.logger module
+-----------------------------
+
+.. automodule:: saruman.helpers.logger
     :members:
     :undoc-members:
     :show-inheritance:

@@ -28,12 +28,7 @@ bugs and fixing the code:
 
    project
    developing
+   modules
    entrypoints
    changelog
 
-Last but not least, a full documentation of saruman code :
-
-.. toctree::
-   :maxdepth: 4
-
-   saruman
