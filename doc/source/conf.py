@@ -9,7 +9,7 @@ import os
 import datetime
 import pkg_resources
 
-sys.path.append(os.path.pardir(os.path.dirname(__name__)))
+sys.path.insert(0, os.path.abspath("../.."))
 
 project = "Saruman"
 author = "Tycho Tatitscheff"
