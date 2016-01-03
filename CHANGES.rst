@@ -1,7 +1,7 @@
 Changelog for Saruman
 =====================
 
-0.2.0 (unreleased)
+0.2.0 (2016-01-03)
 ------------------
 
 - adding sphinx documentation
