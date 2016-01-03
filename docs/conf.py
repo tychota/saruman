@@ -199,7 +199,6 @@ latex_documents = [
 # sys.path.append(os.path.abspath('_themes'))
 # html_theme_path = ['_themes']
 html_theme = 'basicstrap'
-pygments_style = 'flask_theme_support.FlaskyStyle'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
