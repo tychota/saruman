@@ -37,6 +37,9 @@ setup(
             'click',
             'colorlog',
             'pyyaml',
+            'nose>=1.0',
+            'zest.releaser',
+            'coverage',
         ],
         setup_requires=[
             'nose>=1.0',
