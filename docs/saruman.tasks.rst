@@ -14,11 +14,3 @@ Subpackages
     saruman.tasks.iptables
     saruman.tasks.kernel
     saruman.tasks.misc
-
-Module contents
----------------
-
-.. automodule:: saruman.tasks
-    :members:
-    :undoc-members:
-    :show-inheritance:

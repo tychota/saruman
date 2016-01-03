@@ -5,7 +5,7 @@ Submodules
 ----------
 
 saruman.app.queue module
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: saruman.app.queue
     :members:
@@ -13,10 +13,3 @@ saruman.app.queue module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: saruman.app
-    :members:
-    :undoc-members:
-    :show-inheritance:

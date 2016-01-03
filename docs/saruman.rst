@@ -12,10 +12,3 @@ Subpackages
     saruman.helpers
     saruman.tasks
 
-Module contents
----------------
-
-.. automodule:: saruman
-    :members:
-    :undoc-members:
-    :show-inheritance:

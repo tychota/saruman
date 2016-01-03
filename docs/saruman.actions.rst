@@ -5,7 +5,7 @@ Submodules
 ----------
 
 saruman.actions.start module
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: saruman.actions.start
     :members:
@@ -13,10 +13,3 @@ saruman.actions.start module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: saruman.actions
-    :members:
-    :undoc-members:
-    :show-inheritance:
