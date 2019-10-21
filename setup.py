@@ -40,7 +40,7 @@ setup(
             'colorlog==2.6.0',
             'zest.releaser==6.4',
             'coverage==4.0.3',
-            'pyyaml==3.11',
+            'pyyaml==5.1',
             'pygments',
             'sphinx_bootstrap_theme'
         ],
