@@ -34,7 +34,7 @@ setup(
         description='A firewall that leverage AMQP workqueue ! Build by iresam for iresam !',
         long_description=long_description,
         install_requires=[
-            'celery==3.1.19',
+            'celery==5.2.2',
             'plumbum==1.6.1.post0',
             'click==6.2',
             'colorlog==2.6.0',
